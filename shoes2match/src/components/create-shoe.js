@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 
 class CreateShoe extends Component {
@@ -10,7 +11,8 @@ class CreateShoe extends Component {
         brand: '',
         color: '',
         image: '',
-        size: ''
+        size: '',
+        redirect: false
     }
 }
     // method to handle input
@@ -34,9 +36,11 @@ class CreateShoe extends Component {
         // add newShoe to database using axios
         axios.post('http://localhost:3000/shoes/add', newShoe)
             .then(res => console.log(res.data))
-
+            this.setState({ redirect: true })
         // clear Form
         this.clearForm();
+
+
     }
 
     // method to clear out form after submit
@@ -46,12 +50,15 @@ class CreateShoe extends Component {
             brand: '',
             color: '',
             image: '',
-            size: ''
+            size: '',
         })
     }
 
 
     render() {
+        if (this.state.redirect === true) {
+            return <Redirect to='/list' />
+        }
         return(
             <div>
                 <h3>Add Shoes to your Collection</h3>

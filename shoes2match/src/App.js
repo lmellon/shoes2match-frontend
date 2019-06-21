@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import CreateShoe from './components/create-shoe';
 import EditShoe from './components/edit-shoe';
@@ -19,12 +19,13 @@ class App extends Component {
                     <li><Link to="/create"> Add Shoe</Link></li>
                 </ul>
             </nav>
-            <br />
+            <Switch>
                 <Route path="/" exact component={Landing} />
                 <Route path="/list" exact component={ShoesList} />
                 <Route path="/edit/:id" exact component={EditShoe} />
-                <Route path="/create" component={CreateShoe} />
+                <Route path="/create" exact component={CreateShoe} />
                 <Route path="/:id" exact component={Shoe} />
+            </Switch>
             </div>
         </Router>
       );

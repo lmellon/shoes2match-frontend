@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Shoe from './shoe';
+// import Shoe from './shoe';
 import axios from 'axios';
 
 
@@ -39,7 +39,14 @@ class ShoesList extends Component {
                 <div>
                     { this.state.allShoes.map((pair, i) => {
                         return (
-                            <Link to={"/"+pair._id} pair={pair} key={i} ><img src="{pair.image}" alt={pair.style} /></Link>
+                            <Link to={{
+                                pathname: "/:id",
+                                state: {
+                                        pair: pair,
+                                }
+                            }} key={i}>
+                                <img src={pair.image} alt={pair.style}/>
+                            </Link>
                         )
                     })}
                 </div>
