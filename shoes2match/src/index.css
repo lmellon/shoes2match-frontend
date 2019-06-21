@@ -1,3 +1,17 @@
 body {
     background-color: lavender;
 }
+a {
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+.landing {
+    text-align: center;
+}
