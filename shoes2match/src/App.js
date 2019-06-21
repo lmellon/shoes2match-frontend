@@ -5,7 +5,7 @@ import CreateShoe from './components/create-shoe';
 import EditShoe from './components/edit-shoe';
 import Landing from './components/landing';
 import ShoesList from './components/shoes-list';
-
+import Shoe from './components/shoe';
 
 class App extends Component {
     render(){
@@ -21,9 +21,10 @@ class App extends Component {
             </nav>
             <br />
                 <Route path="/" exact component={Landing} />
-                <Route path="/list" component={ShoesList} />
-                <Route path="/edit/:id" component={EditShoe} />
+                <Route path="/list" exact component={ShoesList} />
+                <Route path="/edit/:id" exact component={EditShoe} />
                 <Route path="/create" component={CreateShoe} />
+                <Route path="/:id" exact component={Shoe} />
             </div>
         </Router>
       );
