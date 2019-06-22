@@ -60,9 +60,10 @@ class CreateShoe extends Component {
             return <Redirect to='/' />
         }
         return(
-            <div>
-                <h3>Add Shoes to your Collection</h3>
+            <div className="add-edit-page">
+            <img src="https://media.glamour.com/photos/5695d57f16d0dc3747ee3eeb/master/w_1500,h_1500,c_limit/fashion-2014-11-beautiful-girly-walk-in-closet-inspiration-main.jpg"/>
                 <form onSubmit={this.handleSubmit}>
+                    <h3>Add Shoes to Your Collection</h3>
                     <div className="form-type">
                         <label> Style: </label>
                         <input type="text"
@@ -108,7 +109,7 @@ class CreateShoe extends Component {
                                 id="image"
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-type">
                         <input type="submit"
                                 value="Add To Collection"
                                 className="form-submit"

@@ -71,9 +71,10 @@ class EditShoe extends Component {
         console.log(this.props.location.state.id);
 
         return(
-            <div>
-                <h3>Update Shoe Info</h3>
+            <div className="add-edit-page">
+                <img src="https://media.glamour.com/photos/5695d57f16d0dc3747ee3eeb/master/w_1500,h_1500,c_limit/fashion-2014-11-beautiful-girly-walk-in-closet-inspiration-main.jpg"/>
                 <form onSubmit={this.handleSubmit}>
+                <h3>Current Shoe Info</h3>
                     <div className="form-type">
                         <label> Style: </label>
                         <input type="text"
@@ -119,9 +120,9 @@ class EditShoe extends Component {
                                 id="image"
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-type">
                         <input type="submit"
-                                value="Update"
+                                value="Update Info"
                                 className="form-submit"
                             />
                     </div>
