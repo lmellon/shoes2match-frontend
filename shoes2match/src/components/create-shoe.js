@@ -34,7 +34,7 @@ class CreateShoe extends Component {
         console.log(newShoe);
 
         // add newShoe to database using axios
-        axios.post('http://localhost:3000/shoes/add', newShoe)
+        axios.post('https://shoes2match-be.herokuapp.com/add', newShoe)
             .then(res => console.log(res.data))
             this.setState({ redirect: true })
         // clear Form

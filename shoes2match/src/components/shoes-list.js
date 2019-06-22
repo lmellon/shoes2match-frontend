@@ -15,7 +15,7 @@ class ShoesList extends Component {
 
     // method to retrieve the info in the database
     componentDidMount = () => {
-        axios.get('http://localhost:3000/shoes/')
+        axios.get('https://shoes2match-be.herokuapp.com/')
             .then(response => {
                 console.log(response)
                 this.setState({allShoes: response.data})

@@ -7,7 +7,7 @@ class Shoe extends Component {
 
     remove = (id) => {
         console.log(id);
-        axios.delete('http://localhost:3000/shoes/'+ id)
+        axios.delete('https://shoes2match-be.herokuapp.com/'+ id)
         .then(response => {
             console.log(response)
             this.props.history.push('/list')

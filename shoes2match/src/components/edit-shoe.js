@@ -50,7 +50,7 @@ class EditShoe extends Component {
         console.log(updatedShoe);
 
         // add updatedShoe to database using axios
-        axios.post('http://localhost:3000/shoes/update/' + this.props.location.state.id , updatedShoe)
+        axios.post('https://shoes2match-be.herokuapp.com/update/' + this.props.location.state.id , updatedShoe)
             .then(res => console.log(res.data))
         this.props.history.push("/list")
     }
