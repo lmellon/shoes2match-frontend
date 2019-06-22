@@ -14,9 +14,9 @@ class App extends Component {
             <div className="App">
                 <nav>
                     <ul>
-                        <li className="name"><Link to="/">Home</Link></li>
-                        <li><Link to="/list"> Shoe List </Link></li>
-                        <li><Link to="/create"> Add Shoe</Link></li>
+                        <li className="name"><Link to="/">HOME</Link></li>
+                        <li><Link to="/list"> SHOE LIST</Link></li>
+                        <li><Link to="/create"> ADD SHOE</Link></li>
                     </ul>
                 </nav>
                 <Switch>

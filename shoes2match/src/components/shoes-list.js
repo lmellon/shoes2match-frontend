@@ -45,7 +45,7 @@ class ShoesList extends Component {
     render() {
         return(
             <div className="shoe-list">
-                <h2>Hello My Pretties</h2>
+                <h2>Hello My Pretties...</h2>
                 <div className="all-shoes-container">
                     <div className="all-shoes">
                         { this.state.allShoes.map((pair, i) => {

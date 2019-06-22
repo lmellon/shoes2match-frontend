@@ -5,7 +5,7 @@ class Landing extends Component {
         return(
             <div className="landing">
                 <div className="welcome">
-                    <h1>Shoes2match</h1><br />
+                    <h1>Shoes2match</h1>
                     <h3>A Virtual Shoe Closet!</h3>
                     <p>Ever wonder if you have shoes to match that great outfit?  No longer!  With the <em>Shoes2match</em> app, you can keep a record of all the shoes you own right at your fingertips.  Log the brand, color, size and image so you can always know if you have the perfect shoes. Picking the perfect ensemble has never been easier.</p>
                 </div>

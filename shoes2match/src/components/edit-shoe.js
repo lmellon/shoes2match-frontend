@@ -72,7 +72,7 @@ class EditShoe extends Component {
 
         return(
             <div className="add-edit-page">
-                <img src="https://media.glamour.com/photos/5695d57f16d0dc3747ee3eeb/master/w_1500,h_1500,c_limit/fashion-2014-11-beautiful-girly-walk-in-closet-inspiration-main.jpg"/>
+                <img src="https://media.glamour.com/photos/5695d57f16d0dc3747ee3eeb/master/w_1500,h_1500,c_limit/fashion-2014-11-beautiful-girly-walk-in-closet-inspiration-main.jpg" alt="no pic"/>
                 <form onSubmit={this.handleSubmit}>
                 <h3>Current Shoe Info</h3>
                     <div className="form-type">

@@ -1,9 +1,19 @@
+body, html, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+ }
+
 body {
-    background-color: lavender;
+    background: linear-gradient(to bottom right, #fff6cc 0%, #ffee99 100%);
 }
 a {
     text-decoration: none;
+    color: #236AB9;
+    font-size: 1.25em;
+    font-family: 'Meera Inimai', sans-serif;
 }
+
 @media (max-width:600px) {
     .app {
         display: flex;
@@ -22,8 +32,17 @@ ul {
 
 li {
     list-style: none;
+    padding: .5em;
+}
+li:hover {
+    background-color: #f4d8dc;
 }
 
+nav {
+    background-color: ;
+    padding: .5em;
+    margin: 0;
+}
 /* ===================
     LANDING PAGE
 ====================== */
@@ -38,9 +57,20 @@ li {
 .welcome {
     width: 40%;
 }
-
+h1 {
+    color: #D61A46;
+    padding: 1em;
+    text-shadow: 2px 2px black;
+    font-size: 3em;
+}
+h3 {
+    font-family: 'Handlee', cursive;
+}
  p {
-    text-align: justify;
+    text-align: left;
+    font-size: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
 }
 
 @media (max-width:600px) {
@@ -79,13 +109,14 @@ li {
 ===================== */
 .shoe-list {
     text-align: center;
+    margin: 0;
 }
 
 h2 {
-    padding: 1em;
-    margin: 1em;
     font-size: 2.5em;
+    color: #D61A46;
     font-family: cursive;
+    text-shadow: 1px 1px black;
 }
 
 .all-shoes-container {
@@ -94,7 +125,7 @@ h2 {
     justify-content: space-around;
     max-width: 800px;
     margin: 0 auto;
-
+    border: 1px solid black;
 }
 
 .all-shoes {
@@ -143,7 +174,7 @@ form {
     left: 35%;
     border: 2px solid black;
     padding: 1em;
-    background-color: 	#f4d8dc;
+    background-color: #f4d8dc;
 }
 h3 {
     font-size: 1.5em;
@@ -158,7 +189,7 @@ input[type="text"] {
 }
 
 .form-submit {
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .form-submit:hover {
