@@ -12,20 +12,20 @@ class App extends Component {
         return (
           <Router>
             <div className="App">
-            <nav>
-                <ul>
-                    <li><Link to="/">Shoes2match</Link></li>
-                    <li><Link to="/list"> Shoe List </Link></li>
-                    <li><Link to="/create"> Add Shoe</Link></li>
-                </ul>
-            </nav>
-            <Switch>
-                <Route path="/" exact component={Landing} />
-                <Route path="/list" exact component={ShoesList} />
-                <Route path="/edit/:id" component={EditShoe} />
-                <Route path="/create" component={CreateShoe} />
-                <Route path="/:id" exact component={Shoe} />
-            </Switch>
+                <nav>
+                    <ul>
+                        <li className="name"><Link to="/">Home</Link></li>
+                        <li><Link to="/list"> Shoe List </Link></li>
+                        <li><Link to="/create"> Add Shoe</Link></li>
+                    </ul>
+                </nav>
+                <Switch>
+                    <Route path="/" exact component={Landing} />
+                    <Route path="/list" exact component={ShoesList} />
+                    <Route path="/edit/:id" component={EditShoe} />
+                    <Route path="/create" component={CreateShoe} />
+                    <Route path="/:id" exact component={Shoe} />
+                </Switch>
             </div>
         </Router>
       );

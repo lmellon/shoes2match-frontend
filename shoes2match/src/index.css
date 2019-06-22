@@ -4,6 +4,17 @@ body {
 a {
     text-decoration: none;
 }
+@media (max-width:600px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*=================
+         NAV BAR
+ ================== */
 ul {
     display: flex;
     justify-content: space-around;
@@ -12,11 +23,103 @@ ul {
 li {
     list-style: none;
 }
+
+/* ===================
+    LANDING PAGE
+====================== */
 .landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2em auto;
+    width: 90%;
+    text-align: center;
+}
+.welcome {
+    width: 40%;
+}
+
+ p {
+    text-align: justify;
+}
+
+@media (max-width:600px) {
+    .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .welcome {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    img {
+        max-width: 450px;
+        height: auto;
+    }
+}
+/* ==================
+    SHOE LIST PAGE
+===================== */
+.shoe-list {
     text-align: center;
 }
 
-img {
-    max-width: 500px;
+h2 {
+    padding: 1em;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: cursive;
+}
+
+.all-shoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.all-shoes {
+    background-color: white;
+}
+
+.list-images {
+    max-width: 250px;
     height: auto;
+    padding: 0 .25em;
+
+}
+
+@media (max-width:600px) {
+    .all-shoes-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .list-images {
+        max-width: 200px;
+        height: auto;
+        padding: .25em;
+    }
 }

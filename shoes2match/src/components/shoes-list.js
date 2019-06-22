@@ -44,21 +44,27 @@ class ShoesList extends Component {
 
     render() {
         return(
-            <div>
-                <h3>Hello My Pretties</h3>
-                <div>
-                    { this.state.allShoes.map((pair, i) => {
-                        return (
-                            <Link to={{
-                                pathname: "/:id",
-                                state: {
-                                        pair: pair,
-                                }
-                            }} key={i}>
-                                <img src={pair.image} alt={pair.style}/>
-                            </Link>
-                        )
-                    })}
+            <div className="shoe-list">
+                <h2>Hello My Pretties</h2>
+                <div className="all-shoes-container">
+                    <div className="all-shoes">
+                        { this.state.allShoes.map((pair, i) => {
+                            return (
+                                <Link to={{
+                                    pathname: "/:id",
+                                    state: {
+                                            pair: pair,
+                                    }
+                                }} key={i}
+                                >
+                                    <img
+                                        className="list-images"
+                                        src={pair.image} alt={pair.style}
+                                    />
+                                </Link>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         )
