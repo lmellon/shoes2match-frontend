@@ -22,8 +22,8 @@ class App extends Component {
             <Switch>
                 <Route path="/" exact component={Landing} />
                 <Route path="/list" exact component={ShoesList} />
-                <Route path="/edit/:id" exact component={EditShoe} />
-                <Route path="/create" exact component={CreateShoe} />
+                <Route path="/edit/:id" component={EditShoe} />
+                <Route path="/create" component={CreateShoe} />
                 <Route path="/:id" exact component={Shoe} />
             </Switch>
             </div>

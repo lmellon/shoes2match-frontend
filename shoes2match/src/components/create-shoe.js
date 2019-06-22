@@ -57,7 +57,7 @@ class CreateShoe extends Component {
 
     render() {
         if (this.state.redirect === true) {
-            return <Redirect to='/list' />
+            return <Redirect to='/' />
         }
         return(
             <div>

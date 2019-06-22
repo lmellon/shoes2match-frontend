@@ -15,7 +15,7 @@ class EditShoe extends Component {
 }
 
     componentDidMount = () => {
-        axios.get('http://localhost:3000/shoes/'
+        axios.get('https://shoes2match-be.herokuapp.com/'
     + this.props.location.state.id)
             .then(response => {
                 this.setState({
@@ -52,7 +52,7 @@ class EditShoe extends Component {
         // add updatedShoe to database using axios
         axios.post('https://shoes2match-be.herokuapp.com/update/' + this.props.location.state.id , updatedShoe)
             .then(res => console.log(res.data))
-        this.props.history.push("/list")
+        this.props.history.push("/")
     }
 
     // method to clear out form after submit

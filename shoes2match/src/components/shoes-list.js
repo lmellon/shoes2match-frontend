@@ -25,11 +25,21 @@ class ShoesList extends Component {
             })
     }
 
-    // method to display the shoes
-    // showShoes = () => {
-    //     return this.state.allShoes.map((pair, i) => {
-    //         return <Link to={"/"+pair._id}><img src="{pair.image}" alt={pair.style} /></Link>
-    //     })
+    // method to handle new shoe
+    // handleCreateShoe = (newShoe) => {
+    //     console.log(newShoe);
+    //     // add newShoe to database using axios
+    //     axios.post('https://shoes2match-be.herokuapp.com/add', newShoe)
+    //         .then(res => {
+    //             console.log(res.data)
+    //             this.setState( prevState => {
+    //                 prevState['allShoes'].push(newShoe);
+    //                 return{ ['allShoes']: prevState['allShoes'] }
+    //             })
+    //         })
+    //         .catch(err => {
+    //             console.log(err);
+    //         })
     // }
 
     render() {
