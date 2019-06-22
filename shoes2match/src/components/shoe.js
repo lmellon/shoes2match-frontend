@@ -24,18 +24,18 @@ class Shoe extends Component {
         return(
             <div className="details-box">
                 <div className="shoe-details">
-                    <h3>{this.props.location.state.pair.style}</h3>
+                    <h3><em className="style-cat" >Style:</em>   {this.props.location.state.pair.style}</h3>
                 </div>
                 <div className="shoe-details">
-                    <h3>{this.props.location.state.pair.brand}</h3>
+                    <h3><em className="style-cat" >Brand:</em>   {this.props.location.state.pair.brand}</h3>
                 </div>
                 <div className="shoe-details">
-                    <h3>{this.props.location.state.pair.color}</h3>
+                    <h3><em className="style-cat" >Color:</em>   {this.props.location.state.pair.color}</h3>
                 </div>
                 <div className="shoe-details">
-                    <h3>{this.props.location.state.pair.size}</h3>
+                    <h3><em className="style-cat" >Size:</em>   {this.props.location.state.pair.size}</h3>
                 </div>
-                <div className="shoe-details">
+                <div className="shoe-image">
                     <img src={this.props.location.state.pair.image} alt="no pic"/>
                 </div>
                 <button>

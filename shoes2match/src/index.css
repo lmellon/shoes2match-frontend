@@ -187,3 +187,43 @@ input[type="text"] {
         border-radius: 5px;
     }
 }
+/* ==================
+    SHOE PAGE
+===================== */
+.details-box {
+    text-align: center;
+}
+.shoe-details {
+    display: inline-block;
+    padding: .5em;
+    margin: 1em;
+}
+.style-cat {
+    color: grey;
+}
+.shoe-image > img{
+    max-width: 400px;
+    height: auto;
+}
+
+button {
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+}
+
+@media (max-width:600px) {
+    details-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    button {
+        border: 1px solid black;
+        background: #f4d8dc;
+    }
+
+    button:hover {
+        background-color: white;
+    }
+}
